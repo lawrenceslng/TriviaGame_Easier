@@ -3,48 +3,49 @@ var correctAnswer = 0;
 var wrongAnswer = 0;
 var noAnswer = 0;
 var temp;
-var temp2;
-var questions = [
-    {
-        question: "Question 1", 
-        answerOne: "Answer 1", 
-        answerTwo: "Answer 2", 
-        answerThree: "Answer 3",
-        correctAnswer: "Answer 3"
-    },
-    {
-        question: "Question 2", 
-        answerOne: "Answer 4", 
-        answerTwo: "Answer5", 
-        answerThree: "Answer6",
-        correctAnswer: "Answer6"
-    },
-    {
-        question: "Question 3",
-        answerOne: "Answer 7",
-        answerTwo: "Answer8",
-        answerThree: "Answer9",
-        correctAnswer: "Answer9"
-    },
-    {
-        question: "Question 4",
-        answerOne: "Answer 10",
-        answerTwo: "Answer2",
-        answerThree: "Answer3",
-        correctAnswer: "Answer3"
-    },
-    {
-        question: "Question 5",
-        answerOne: "Answer 1",
-        answerTwo: "Answer2",
-        answerThree: "Answer3",
-        correctAnswer: "Answer3"
-    }];
-var numQuestions = questions.length;
-var i = 0;
+// var temp2;
+// var questions = [
+//     {
+//         question: "Question 1", 
+//         answerOne: "Answer 1", 
+//         answerTwo: "Answer 2", 
+//         answerThree: "Answer 3",
+//         correctAnswer: "Answer 3"
+//     },
+//     {
+//         question: "Question 2", 
+//         answerOne: "Answer 4", 
+//         answerTwo: "Answer5", 
+//         answerThree: "Answer6",
+//         correctAnswer: "Answer6"
+//     },
+//     {
+//         question: "Question 3",
+//         answerOne: "Answer 7",
+//         answerTwo: "Answer8",
+//         answerThree: "Answer9",
+//         correctAnswer: "Answer9"
+//     },
+//     {
+//         question: "Question 4",
+//         answerOne: "Answer 10",
+//         answerTwo: "Answer2",
+//         answerThree: "Answer3",
+//         correctAnswer: "Answer3"
+//     },
+//     {
+//         question: "Question 5",
+//         answerOne: "Answer 1",
+//         answerTwo: "Answer2",
+//         answerThree: "Answer3",
+//         correctAnswer: "Answer3"
+//     }];
+// var numQuestions = questions.length;
+// var i = 0;
 
 $("#contentBox").hide();
 $("#score").hide();
+$("#time").html(time);
 
 // function Timer()
 // {
@@ -64,6 +65,7 @@ $("#score").hide();
 $(document).on("click","#startButton",function()
 {
     $("#contentBox").show();
+    $("#intro").hide();
     $("#startButton").hide();
     $("#timer").html(time);  
     temp = setInterval(function()

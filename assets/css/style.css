@@ -1,0 +1,17 @@
+body{
+    background-color: grey;
+    /* text-align: center; */
+}
+h1{
+    color: white;
+}
+#heading{
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    /* border: 2px red solid; */
+}
+#contentBox{
+    margin: auto;
+    width: 60%;
+}
