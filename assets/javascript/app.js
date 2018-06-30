@@ -1,4 +1,4 @@
-var time = 120;
+var time = 20;
 var correctAnswer = 0;
 var wrongAnswer = 0;
 var noAnswer = 0;
@@ -46,20 +46,20 @@ var i = 0;
 $("#contentBox").hide();
 $("#score").hide();
 
-function Timer()
-{
-    $("#timer").html(time);
-    if(time > 0)
-    {
-        time--;
-    }
-    else
-    {
-        $("#timer").html("Time's Up!");
-        clearTimeout(temp);
-        revealAnswer();
-    }    
-}
+// function Timer()
+// {
+//     $("#timer").html(time);
+//     if(time > 0)
+//     {
+//         time--;
+//     }
+//     else
+//     {
+//         $("#timer").html("Time's Up!");
+//         clearTimeout(temp);
+//         revealAnswer();
+//     }    
+// }
 
 $(document).on("click","#startButton",function()
 {
@@ -84,7 +84,7 @@ function revealAnswer()
     $("#score").show();
     // check which value radio button is checked
     var selValue, corValue;
-    for(var i = 1; i < 6; i++)
+    for(var i = 1; i < 11; i++)
     {
         selValue = $("#answerChoices"+i+" input[name=choices]:checked").val(); 
         corValue = $("#answerChoices"+i+" input[status=correct]").val();
