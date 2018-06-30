@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Timer Quiz</title>
+ 
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+<div id="container">
+        <div id="heading">
+            <h1>The World's Most Random Quiz of All Time!</h1> 
+            <button id="startButton">Start Game</button>
+        </div>
+        <div id = "contentBox">
+            <div id = "timeLeft">
+                <h2>Time Left : <span id="timer"></span></h2>
+            </div>
+            <div id = "question1">
+                    What is the name of the instructor of this class?
+            </div>
+
+            <div id = "answerChoices1">
+                    <form>
+                            <input type="radio" name="choices" value="Pavan" status="correct"> Pavan<br>
+                            <input type="radio" name="choices" value="Navan"> Navan<br>
+                            <input type="radio" name="choices" value="Don't Know"> Don't Know
+                    </form>
+            </div>
+
+            <div id = "question2">
+                    What car do I drive?
+            </div>
+
+            <div id = "answerChoices2">
+                    <form>
+                            <input type="radio" name="choices" value="Dodge Charger"> Dodge Charger<br>
+                            <input type="radio" name="choices" value="Subaru Legacy" status="correct"> Subaru Legacy<br>
+                            <input type="radio" name="choices" value="Toyota Corolla"> Toyota Corolla
+                    </form>
+            </div>
+
+            <div id = "question3">
+                    Question 3
+            </div>
+
+            <div id = "answerChoices3">
+                    <form>
+                            <input type="radio" name="choices" value="male"> Male<br>
+                            <input type="radio" name="choices" value="female"> Female<br>
+                            <input type="radio" name="choices" value="other" status="correct"> Other
+                    </form>
+            </div>
+
+            <div id = "question4">
+                    Question 4
+            </div>
+
+            <div id = "answerChoices4">
+                    <form>
+                            <input type="radio" name="choices" value="male"> Male<br>
+                            <input type="radio" name="choices" value="female"> Female<br>
+                            <input type="radio" name="choices" value="other" status="correct"> Other
+                    </form>
+            </div>
+
+            <div id = "question5">
+                    Question 5
+            </div>
+
+            <div id = "answerChoices5">
+                    <form>
+                            <input type="radio" name="choices" value="male"> Male<br>
+                            <input type="radio" name="choices" value="female"> Female<br>
+                            <input type="radio" name="choices" value="other" status="correct"> Other
+                    </form>
+            </div>
+
+            <button id="submit">Done!</button>
+
+
+        </div>
+        <div id = "score">
+                Correct Answer: <span id="correct"></span><br>
+                Incorrect Answer: <span id="wrong"></span><br>
+                Unanswered Questions: <span id="unanswered"></span>
+        </div>
+
+   
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</div>
+</body>
+</html>
